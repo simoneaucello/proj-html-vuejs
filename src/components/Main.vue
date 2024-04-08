@@ -14,6 +14,7 @@ import {store} from '../data/store'
 
 
 <template>
+  MAIN
 
 </template>
 
