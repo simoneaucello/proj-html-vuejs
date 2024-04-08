@@ -29,7 +29,7 @@ import { footerMenues } from '../data/menues'
 
 
 <template>
-  <div class="container mb-5">
+  <div class="container mb-5 my-5">
     <div class="row row-cols-4 ">
       <div class="col">
 
