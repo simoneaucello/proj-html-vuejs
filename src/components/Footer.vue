@@ -19,6 +19,9 @@ import { footerMenues } from '../data/menues'
       latestMenu(){
         return footerMenues.latest
       },
+      socialMenu(){
+        return footerMenues.social
+      }
     }
   }
 
@@ -31,7 +34,7 @@ import { footerMenues } from '../data/menues'
       <div class="col">
 
         <h5>AVADA TECH FORUM</h5>
-        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, accusamus dignissimos sunt facilis nemo sed odio soluta minima vitae, quod consequatur tempora aliquid sapiente et fuga esse. </p>
+        <p class="desc my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, accusamus dignissimos sunt facilis nemo sed odio soluta minima vitae, quod consequatur tempora aliquid sapiente et fuga esse. </p>
       </div>
 
       <!-- col menu  -->
@@ -75,8 +78,31 @@ import { footerMenues } from '../data/menues'
 
   </div>
   <div class="bottom-footer">
-    <div class="container">
-      <p>Copyright</p>
+    <div class="container d-flex justify-content-between align-items-center my-3">
+  
+      <p>
+        <i class="fa-regular fa-copyright"></i>
+        Copyrigth 2012 - 2024 | Avada theme by <span>Theme Fusion</span> All rigth reserved | Powered by <span>Wordpress</span>
+      </p>
+ 
+
+    <div>
+      <ul class="d-flex">
+        <li>
+          <a href="#"><img src="/img/facebook.png" alt=""></a>         
+        </li>
+        <li>
+          <a href="#"><img src="/img/twitter.png" alt=""></a>         
+        </li>
+        <li>
+          <a href="#"><img src="/img/instagram.png" alt=""></a>         
+        </li>
+        <li>
+          <a href="#"><img src="/img/youtube.png" alt=""></a>         
+        </li>
+       
+      </ul>
+    </div>
 
     </div>
   </div>
@@ -113,5 +139,17 @@ p{
 
 .bottom-footer{
   border-top: 1px solid #c0c0c0;
+  color: $nevada;
+  span{
+    color: $shark;
+    font-weight: bold;
+  }
+  li{
+    list-style: none;
+    padding: 5px;
+    img{
+      width: 30px;
+    }
+  }
 }
 </style>

@@ -86,6 +86,29 @@ const footerMenues = {
       text: 'Mauris ac nibh quis eros sagittis lacinia a et dui',
       href: '#'
     },
+  ],
+
+  social: [
+      { 
+        text: '/img/facebook.png', 
+        href: '#'
+      },
+
+      { 
+        text: '<i class="fa-brands fa-x-twitter"></i>', 
+        href: '#'
+      },
+
+      { 
+        text: '<i class="fa-brands fa-square-instagram"></i>', 
+        href: '#'
+      },
+
+      { 
+        text: '<i class="fa-brands fa-square-youtube"></i>', 
+        href: '#'
+      }
+
   ]
 }
 
