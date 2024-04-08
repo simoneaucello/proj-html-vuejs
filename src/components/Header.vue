@@ -1,7 +1,12 @@
 <script>
 import {store} from '../data/store'
 import {headerMenues} from '../data/menues'
+import Jumbotron from '../components/partials/Jumbotron.vue';
   export default {  
+    components: {
+      Jumbotron
+},
+
     data(){
       return{
         store
@@ -33,8 +38,8 @@ import {headerMenues} from '../data/menues'
         v-for="(item, index) in mainMenu"
         :key="`h-${index}`"
         class="nav-link m-2" aria-current="page" :href="item.href">{{item.text}}</a>
-        <a href="#" class="nav-link join_btn d-flex align-items-center " aria-current="page">JOIN US</a>
-        <a href="#" class="nav-link" aria-current="page"><i class="fa-solid fa-magnifying-glass"></i>
+        <a href="#" class=" join_btn d-flex align-items-center " aria-current="page">JOIN US</a>
+        <a href="#" class="nav-link mx-3" aria-current="page"><i class="fa-solid fa-magnifying-glass"></i>
         </a>
        
       </div>
@@ -43,6 +48,10 @@ import {headerMenues} from '../data/menues'
   </div>
 </nav>
 <!-- navbar  -->
+
+<!-- jumbotron  -->
+
+<Jumbotron />
 </template>
 
 
@@ -53,11 +62,17 @@ import {headerMenues} from '../data/menues'
 nav{
   background-color: $easternblue;
   a{
-    color: $white
+    color: $white;
+    transition: all .3s ease-in;
   }
   .join_btn{
     background-color: black;
-    height: 8%;
+    padding: 5px;
+    text-decoration: none;
+    &:hover{
+      color: $easternblue;
+      transition: all .5s ease;
+  }
   }
 }
 
