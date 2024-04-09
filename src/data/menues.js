@@ -90,7 +90,7 @@ const footerMenues = {
 
   social: [
       { 
-        text: '/img/facebook.png', 
+        text: '"/img/facebook.png"', 
         href: '#'
       },
 

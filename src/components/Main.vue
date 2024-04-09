@@ -1,12 +1,17 @@
 <script>
-
+import Card from './partials/Card.vue'
+import cardItem from '../data/cards'
 import {store} from '../data/store'
   export default {
+    components: {
+      Card
+    },
 
 
     data(){
       return{
-        store
+        store,
+        cardItem
       }
     }
   }
@@ -14,6 +19,8 @@ import {store} from '../data/store'
 
 
 <template>
+
+  <main>
   
   <!-- place to be section  -->
   <div class="container-fluid place-to-be justify-content-center d-flex ">
@@ -29,9 +36,28 @@ import {store} from '../data/store'
     <h6>PHASELLUS EGET METUS</h6>
     <h2>All the latest news</h2>
     <div class="lined my-3"></div>
+  </div>
 
-   </div>
+  <div class="container ">
+    <div class="row row-cols-3">
+      
+    <Card 
+    class="col d-flex justify-content-center"
+    v-for="item in cardItem"
+    :key="item.id"
+    :img="item.img"
+    :title="item.title"
+    :details="item.details"
+    :desc="item.desc"
+    />
 
+    </div>
+    
+
+
+  </div>
+
+</main>
 </template>
 
 
