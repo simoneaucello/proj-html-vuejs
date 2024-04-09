@@ -10,8 +10,8 @@ import {featured} from '../../data/sponsored'
 
 
     computed:{
-      sponsorArticle(){
-        return featured.article
+      sponsorProduct(){
+        return featured.product
       }
     }
     
@@ -21,7 +21,7 @@ import {featured} from '../../data/sponsored'
 <template>
   <div class="container sponsor text-white">
     <div 
-    v-for="(item, index) in sponsorArticle"
+    v-for="(item, index) in sponsorProduct"
     :key="`h-${index}`"
     class="banner">
     <h5>{{item.type}}</h5>
@@ -38,13 +38,15 @@ import {featured} from '../../data/sponsored'
 @use '/src/assets/scss/partials/variables' as *;
 
 .sponsor{
-  background-image: url(/public/img/featured_article_1_bg.jpg);
+  background-image: url(/public/img/featured_article_2_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 98%;
+  width: 100%;
   margin-bottom: 30px;
   .banner{
-    padding: 250px 80px 80px;
+    padding: 120px 60px 80px 70px;
+    margin: 0 auto;
+
     .my_btn{
       background-color: $shark;
     }

@@ -1,20 +1,24 @@
 <script>
 import Sponsored from './partials/Sponsored.vue'
 import Card from './partials/Card.vue'
+import Tutorials from './partials/Tutorials.vue'
+import Featured from './partials/Featured.vue'
+import {tutorials} from '../data/tutorials'
 import {articles} from '../data/articleCards'
 import {store} from '../data/store'
 
   export default {
     components: {
       Card,
-      Sponsored
+      Sponsored,
+      Tutorials,
+      Featured
     },
 
 
     data(){
       return{
         store,
-        // cardItem,
       }
     },
 
@@ -26,6 +30,10 @@ import {store} from '../data/store'
 
       productSponsor(){
         return articles.articlesBottom
+      },
+
+      tutorials(){
+        return tutorials.guides
       }
     
     }
@@ -49,7 +57,7 @@ import {store} from '../data/store'
 
    <div class="container d-flex justify-content-center flex-column text-center my-5">
     <h6>PHASELLUS EGET METUS</h6>
-    <h2>All the latest news</h2>
+    <h2 class="fw-bolder">All the latest news</h2>
     <div class="lined my-3"></div>
   </div>
 
@@ -65,9 +73,11 @@ import {store} from '../data/store'
     :details="item.details"
     :desc="item.desc"
     />
+    <!-- cards top  -->
     <!-- sponsored card  -->
     <Sponsored/>
     <!-- sponsored card  -->
+    <!-- cards bottom  -->
     <Card 
     class="col d-flex justify-content-center"
     v-for="item in productSponsor"
@@ -77,8 +87,32 @@ import {store} from '../data/store'
     :details="item.details"
     :desc="item.desc"
     />
+    <!-- cards bottom  -->
+
   </div>
-  <!-- cards top  -->
+
+    <div class="product-review row d-flex mt-5">
+      <div class="col-8">
+        <Featured/>
+      </div>
+
+      <div class="col-4">
+        <h3 class="mb-4 fw-bold">Tutorials & Guides</h3>
+    <div class="lined-orange"></div>
+
+        <Tutorials 
+        v-for="item in tutorials"
+        :key="item.id"
+        :img="item.img"
+        :title="item.title"
+        :desc="item.desc"
+        />
+      </div>
+        
+       
+        
+      </div>
+
 
 
 
@@ -124,5 +158,13 @@ h2{
   background-color: #e21b1b;
   margin: 0 auto;
 }
+.lined-orange{
+    content: '';
+    width: 25%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: $salmon;
+    margin-bottom: 35px;
+  }
 
 </style>
