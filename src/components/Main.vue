@@ -3,6 +3,7 @@ import Sponsored from './partials/Sponsored.vue'
 import Card from './partials/Card.vue'
 import Tutorials from './partials/Tutorials.vue'
 import Featured from './partials/Featured.vue'
+import CallToAction from './partials/CallToAction.vue'
 import {tutorials} from '../data/tutorials'
 import {articles} from '../data/articleCards'
 import {store} from '../data/store'
@@ -12,7 +13,8 @@ import {store} from '../data/store'
       Card,
       Sponsored,
       Tutorials,
-      Featured
+      Featured,
+      CallToAction
     },
 
 
@@ -89,7 +91,9 @@ import {store} from '../data/store'
     />
     <!-- cards bottom  -->
 
-  </div>
+    </div>
+
+    <!-- tutorial section  -->
 
     <div class="product-review row d-flex mt-5">
       <div class="col-8">
@@ -98,7 +102,7 @@ import {store} from '../data/store'
 
       <div class="col-4">
         <h3 class="mb-4 fw-bold">Tutorials & Guides</h3>
-    <div class="lined-orange"></div>
+        <div class="lined-orange"></div>
 
         <Tutorials 
         v-for="item in tutorials"
@@ -107,22 +111,20 @@ import {store} from '../data/store'
         :title="item.title"
         :desc="item.desc"
         />
-      </div>
-        
-       
-        
-      </div>
+      </div>       
+    </div>
+    <!-- tutorial section  -->
+  </div>
 
+  <CallToAction />
+
+  
 
 
 
   
 
 
-    
-
-
-  </div>
 
 </main>
 </template>
