@@ -1,7 +1,7 @@
 <script>
 import Sponsored from './partials/Sponsored.vue'
 import Card from './partials/Card.vue'
-import cardItem from '../data/cards'
+import {articles} from '../data/articleCards'
 import {store} from '../data/store'
 
   export default {
@@ -14,14 +14,20 @@ import {store} from '../data/store'
     data(){
       return{
         store,
-        cardItem,
+        // cardItem,
       }
     },
 
     computed:{
-      sponsorArticle(){
-        return sponsorItem.article
+
+      articleSponsor(){
+        return articles.articlesTop
+      },
+
+      productSponsor(){
+        return articles.articlesBottom
       }
+    
     }
   }
 </script>
@@ -49,24 +55,36 @@ import {store} from '../data/store'
 
   <!-- cards top  -->
   <div class="container">
-    <div class="row row-cols-3">    
+    <div class="row row-cols-3  ">    
     <Card 
     class="col d-flex justify-content-center"
-    v-for="item in cardItem"
+    v-for="item in articleSponsor"
     :key="item.id"
     :img="item.img"
     :title="item.title"
     :details="item.details"
     :desc="item.desc"
     />
-    </div>
+    <!-- sponsored card  -->
+    <Sponsored/>
+    <!-- sponsored card  -->
+    <Card 
+    class="col d-flex justify-content-center"
+    v-for="item in productSponsor"
+    :key="item.id"
+    :img="item.img"
+    :title="item.title"
+    :details="item.details"
+    :desc="item.desc"
+    />
+  </div>
   <!-- cards top  -->
 
-  <!-- sponsored card  -->
 
-  <Sponsored/>
 
-  <!-- sponsored card  -->
+  
+
+
     
 
 

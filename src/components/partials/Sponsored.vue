@@ -40,7 +40,8 @@ import {featured} from '../../data/sponsored'
   background-image: url(/public/img/featured_article_1_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 98%;
+  margin-bottom: 30px;
   .banner{
     padding: 250px 80px 80px;
 

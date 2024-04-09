@@ -38,7 +38,7 @@
 <style lang="scss" scoped>
 
 .my_card{
-  max-width: 302px;
+  width: 100%;
   h6{
     font-weight: bold;
     margin-top: 5px;
