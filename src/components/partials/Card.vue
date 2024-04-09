@@ -25,7 +25,7 @@
         <div 
         class="my_card">
         <img :src="getImagePath(`${img}`)" :alt="title">
-        <h5>{{title}}</h5>
+        <h6>{{title}}</h6>
         <span>{{details}}</span>
         <p>{{desc}}</p>
       </div>
@@ -36,5 +36,20 @@
 
 
 <style lang="scss" scoped>
+
+.my_card{
+  max-width: 302px;
+  h6{
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  p{
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  span{
+    font-size: 13px;
+  }
+}
 
 </style>

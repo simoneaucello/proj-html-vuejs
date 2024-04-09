@@ -1,17 +1,26 @@
 <script>
+import Sponsored from './partials/Sponsored.vue'
 import Card from './partials/Card.vue'
 import cardItem from '../data/cards'
 import {store} from '../data/store'
+
   export default {
     components: {
-      Card
+      Card,
+      Sponsored
     },
 
 
     data(){
       return{
         store,
-        cardItem
+        cardItem,
+      }
+    },
+
+    computed:{
+      sponsorArticle(){
+        return sponsorItem.article
       }
     }
   }
@@ -38,9 +47,9 @@ import {store} from '../data/store'
     <div class="lined my-3"></div>
   </div>
 
-  <div class="container ">
-    <div class="row row-cols-3">
-      
+  <!-- cards top  -->
+  <div class="container">
+    <div class="row row-cols-3">    
     <Card 
     class="col d-flex justify-content-center"
     v-for="item in cardItem"
@@ -50,8 +59,14 @@ import {store} from '../data/store'
     :details="item.details"
     :desc="item.desc"
     />
-
     </div>
+  <!-- cards top  -->
+
+  <!-- sponsored card  -->
+
+  <Sponsored/>
+
+  <!-- sponsored card  -->
     
 
 
