@@ -7,6 +7,7 @@ import CallToAction from './partials/CallToAction.vue'
 import CallToAction2 from './partials/CallToAction2.vue'
 import Community from './partials/Community.vue'
 import Forum from './partials/Forum.vue'
+import Newsletter from './partials/Newsletter.vue'
 import {tutorials} from '../data/tutorials'
 import {articles} from '../data/articleCards'
 import {forum} from '../data/forum'
@@ -21,7 +22,8 @@ import {store} from '../data/store'
       CallToAction,
       CallToAction2,
       Forum,
-      Community
+      Community,
+      Newsletter
     },
 
 
@@ -66,7 +68,7 @@ import {store} from '../data/store'
   <div class="container-fluid place-to-be justify-content-center d-flex ">
     <div class="my-5 flex-column text-center forum-text">
       <h6 class="my-5">AVADA FORUM IS THE PLACE TO BE</h6>
-      <p class="my-5">In quis lectus sed leo elementum faucibus in dapibus dictum. Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus, dolor at, bibendum purus. Donec vehicula nec tortor ac finibus.
+      <p class="my-5 sub-text">In quis lectus sed leo elementum faucibus in dapibus dictum. Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus, dolor at, bibendum purus. Donec vehicula nec tortor ac finibus.
       </p>
     </div>
   </div>
@@ -152,15 +154,7 @@ import {store} from '../data/store'
 
   <Community />
 
-
-
-  
-
-
-
-  
-
-
+  <Newsletter />
 
 </main>
 </template>
@@ -179,6 +173,7 @@ import {store} from '../data/store'
     width: 700px;
     font-size: 20px;
     color: $nevada;
+    line-height: 35px;;
   }
 }
 h6{
@@ -218,6 +213,9 @@ h2{
   }
   .margined{
   margin: 0 auto;}
+  .product-review{
+    margin-bottom: 90px;
+  }
 
 
 </style>

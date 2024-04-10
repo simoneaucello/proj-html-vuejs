@@ -78,7 +78,7 @@ import { footerMenues } from '../data/menues'
 
   </div>
   <div class="bottom-footer">
-    <div class="container d-flex justify-content-between align-items-center my-3">
+    <div class="container d-flex justify-content-between align-items-center my-4">
   
       <p>
         <i class="fa-regular fa-copyright"></i>

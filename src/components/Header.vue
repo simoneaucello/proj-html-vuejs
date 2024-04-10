@@ -36,7 +36,7 @@ import Jumbotron from '../components/partials/Jumbotron.vue';
           <a 
           v-for="(item, index) in mainMenu"
           :key="`h-${index}`"
-          class="nav-link m-2" aria-current="page" :href="item.href">{{item.text}}</a>
+          class="nav-link m-3" aria-current="page" :href="item.href">{{item.text}}</a>
           <a href="#" class=" join_btn d-flex align-items-center " aria-current="page">JOIN US</a>
           <a href="#" class="nav-link mx-3" aria-current="page"><i class="fa-solid fa-magnifying-glass"></i>
           </a>      
@@ -65,7 +65,7 @@ nav{
   }
   .join_btn{
     background-color: black;
-    padding: 5px;
+    padding: 5px 20px;
     text-decoration: none;
     &:hover{
       color: $easternblue;
