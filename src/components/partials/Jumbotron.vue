@@ -8,7 +8,7 @@
     <div class="tron container">
     <h1>Tech Forum!</h1>
     <p class="text-white my-4">Discuss all the latest technology news and trends</p>
-    <button type="button" class="btn my_btn my-4 text-white">GET AVADA NOW! ></button>
+    <button type="button" class=" my_btn my-4 text-white">GET AVADA NOW! &nbsp;></button>
   </div>
   </div>
 </template>
@@ -32,16 +32,14 @@
     margin-bottom: 280px;
     .my_btn{
       background-color: $easternblue;
+      padding: 7px 30px;
+      border: none;
       &:hover{
         background-color: #202325;
         transition: all .3s ease-out;
       }
     }
   }
-
 }
-
-
-
 
 </style>

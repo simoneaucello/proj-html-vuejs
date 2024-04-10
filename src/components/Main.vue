@@ -77,7 +77,7 @@ import {store} from '../data/store'
    <div class="container d-flex justify-content-center flex-column text-center my-5">
     <h6>PHASELLUS EGET METUS</h6>
     <h2 class="fw-bold">All the latest news</h2>
-    <div class="lined my-3"></div>
+    <div class="lined-forum mt-4"></div>
   </div>
 
   <!-- cards top  -->
@@ -138,7 +138,7 @@ import {store} from '../data/store'
   <div class="container-fluid text-center forum my_container d-flex justify-content-center flex-column">
     <h6>PHASELLUS EGET METUS</h6>
     <h2 class="fw-bold title">Forum Sections</h2>
-        <div class="lined-forum mt-5"></div>
+        <div class="lined-forum mt-4"></div>
         <div class="container row row-cols-4 margined">
         <Forum 
         class="d-flex justify-content-center "
@@ -178,18 +178,12 @@ import {store} from '../data/store'
 }
 h6{
   margin-top: 30px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 13px
 }
 h2{
-  font-size: bold;
-}
-
-.lined{
-  content: '';
-  width: 8%;
-  height: 2px;
-  border-radius: 3px;
-  background-color: #e21b1b;
-  margin: 0 auto;
+  font-weight: bold;
 }
 .lined-orange{
     content: '';
@@ -205,7 +199,7 @@ h2{
   }
 .lined-forum{
     content: '';
-    width: 10%;
+    width: 7%;
     height: 2px;
     border-radius: 3px;
     background-color: $salmon;

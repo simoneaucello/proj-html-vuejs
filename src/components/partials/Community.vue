@@ -9,7 +9,7 @@
     <div class="my_container">
     <h2 class="fw-bold">Hey! Join to our <br> Community</h2>
     <p class="m-5">Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. Curabitur feugiat vuluptate purus ipsums dolores ficilis uns etra.</p>
-    <button type="button" class="btn my_btn my-4 text-white">SIGN UP ></button>
+    <button type="button" class="my_btn my-4 text-white">SIGN UP &nbsp;></button>
   </div>
   </div>
 </template>
@@ -34,7 +34,9 @@
     }
   }
  .my_btn{
-      background-color: $easternblue;
+  background-color: $easternblue;
+      padding: 7px 30px;
+      border: none;
       &:hover{
         background-color: #f0926b;
         transition: all .3s ease-out;

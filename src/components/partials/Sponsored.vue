@@ -27,7 +27,7 @@ import {featured} from '../../data/sponsored'
     <h5>{{item.type}}</h5>
     <h2>{{item.title}}</h2>
     <p class="mt-4">{{item.desc}}</p>
-    <button type="button" class="btn my_btn my-4 text-white">READ MORE ></button>
+    <button type="button" class=" my_btn my-4 text-white">READ MORE &nbsp;></button>
   </div>
 
   </div>
@@ -47,6 +47,12 @@ import {featured} from '../../data/sponsored'
     padding: 250px 80px 80px;
     .my_btn{
       background-color: $shark;
+      padding: 7px 30px;
+      border: none;
+      &:hover{
+        background-color: #3f4041;
+        transition: all .3s ease-out;
+      }
     }
 
   }

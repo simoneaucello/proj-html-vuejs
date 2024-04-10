@@ -30,6 +30,11 @@
       background-color: $shark;
       color: white;
       padding: 8px 75px;
+      border: none;
+      &:hover{
+        background-color: #3f4041;
+        transition: all .3s ease-out;
+      }     
     }
    
   }
