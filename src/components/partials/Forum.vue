@@ -14,7 +14,7 @@
           <div class="row mt-3 my_container ">
             <div class="col ">
               <div class="my_card mt-4 d-flex justify-content-center align-items-center flex-column">
-                <div v-html="icon" class="circle text-white "></div>
+                <a v-html="icon" class="circle text-white" href="#"></a>
                 <h5 class="fw-bold">{{ text }}</h5>
               </div>
             </div>   
@@ -36,6 +36,7 @@
     height: 250px;
     background-color: #fff;
     border-top: 3px solid $bostonblue;
+    cursor: pointer;
     .circle{
       background-color: $salmon;
       padding: 20px;

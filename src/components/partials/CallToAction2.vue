@@ -6,7 +6,7 @@
 
 <template>
   <div class="container-fluid divide d-flex justify-content-center">
-    <h5 class="text-white fw-bold">READ OUR BLOG &nbsp;<i class="fa-solid fa-arrow-right-long"></i></h5>
+    <h5 class="text-white fw-bold">GO TO OUR FORUM &nbsp;<i class="fa-solid fa-arrow-right-long"></i></h5>
 
   </div>
 </template>

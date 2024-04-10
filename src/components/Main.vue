@@ -4,6 +4,8 @@ import Card from './partials/Card.vue'
 import Tutorials from './partials/Tutorials.vue'
 import Featured from './partials/Featured.vue'
 import CallToAction from './partials/CallToAction.vue'
+import CallToAction2 from './partials/CallToAction2.vue'
+import Community from './partials/Community.vue'
 import Forum from './partials/Forum.vue'
 import {tutorials} from '../data/tutorials'
 import {articles} from '../data/articleCards'
@@ -17,7 +19,9 @@ import {store} from '../data/store'
       Tutorials,
       Featured,
       CallToAction,
-      Forum
+      CallToAction2,
+      Forum,
+      Community
     },
 
 
@@ -43,6 +47,10 @@ import {store} from '../data/store'
 
       forum(){
         return forum.iconText
+      },
+
+      cta(){
+        return forum.cta
       }
     
     }
@@ -140,10 +148,9 @@ import {store} from '../data/store'
       </div>
   </div>
 
+  <CallToAction2 />
 
-
-
-  <CallToAction />
+  <Community />
 
 
 

@@ -32,6 +32,15 @@ const forum = {
       icon: '<i class="fa-solid fa-wrench fa-xl"></i>',
       text: 'Tutorials & Guides'
     },
+  ],
+
+  cta: [
+    {
+      text: 'READ OUR BLOG'
+    },
+    {
+      text: 'GO TO OUR FORUM'
+    },
   ]
 }
 
