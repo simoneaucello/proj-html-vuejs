@@ -19,7 +19,6 @@
   background-color: $shark;
   h5{
     padding: 50px;
-
   }
 }
 

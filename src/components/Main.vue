@@ -4,8 +4,10 @@ import Card from './partials/Card.vue'
 import Tutorials from './partials/Tutorials.vue'
 import Featured from './partials/Featured.vue'
 import CallToAction from './partials/CallToAction.vue'
+import Forum from './partials/Forum.vue'
 import {tutorials} from '../data/tutorials'
 import {articles} from '../data/articleCards'
+import {forum} from '../data/forum'
 import {store} from '../data/store'
 
   export default {
@@ -14,7 +16,8 @@ import {store} from '../data/store'
       Sponsored,
       Tutorials,
       Featured,
-      CallToAction
+      CallToAction,
+      Forum
     },
 
 
@@ -36,6 +39,10 @@ import {store} from '../data/store'
 
       tutorials(){
         return tutorials.guides
+      },
+
+      forum(){
+        return forum.iconText
       }
     
     }
@@ -59,7 +66,7 @@ import {store} from '../data/store'
 
    <div class="container d-flex justify-content-center flex-column text-center my-5">
     <h6>PHASELLUS EGET METUS</h6>
-    <h2 class="fw-bolder">All the latest news</h2>
+    <h2 class="fw-bold">All the latest news</h2>
     <div class="lined my-3"></div>
   </div>
 
@@ -118,6 +125,28 @@ import {store} from '../data/store'
 
   <CallToAction />
 
+  <div class="container-fluid text-center forum my_container d-flex justify-content-center flex-column">
+    <h6>PHASELLUS EGET METUS</h6>
+    <h2 class="fw-bold title">Forum Sections</h2>
+        <div class="lined-forum mt-5"></div>
+        <div class="container row row-cols-4 margined">
+        <Forum 
+        class="d-flex justify-content-center "
+        v-for="(item, index) in forum"
+        :key="`h-${index}`"
+        :icon="item.icon"
+        :text="item.text"
+        />
+      </div>
+  </div>
+
+
+
+
+  <CallToAction />
+
+
+
   
 
 
@@ -168,5 +197,20 @@ h2{
     background-color: $salmon;
     margin-bottom: 35px;
   }
+  .forum{
+  background-color: #f1f1f1;
+  padding: 70px;
+  }
+.lined-forum{
+    content: '';
+    width: 10%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: $salmon;
+    margin: 0 auto;
+  }
+  .margined{
+  margin: 0 auto;}
+
 
 </style>
